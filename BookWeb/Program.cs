@@ -29,6 +29,10 @@ namespace BookWeb
                 string pfxFile = Path.Combine(Directory.GetCurrentDirectory(), "demoweb.pfx");
                 listenOptions.UseHttps(pfxFile, "demo1234");
             });
+
+            //http服务端口
+            options.Listen(IPAddress.Any, 5001);
+
         }
     }
 }
