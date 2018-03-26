@@ -1,0 +1,6 @@
+{    
+    "registry-mirrors": ["https://registry.docker-cn.com"],
+    "insecure-registries": ["192.168.41.129:9999"],
+    "hosts": ["unix:///var/run/docker.sock", "tcp://0.0.0.0:2375"],
+    "log-opts":{ "max-size": "10m","max-file": "10"}
+}
